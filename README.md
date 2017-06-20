@@ -1,6 +1,6 @@
-# libjs
+# libjs - General Purpose JavaScript Library
 
-## General Purpose JavaScript Library
+libjs is a library of useful JavaScript functions. 
 
 ## Requirements:
 * Library *MUST* be self-contained with no dependecies.
