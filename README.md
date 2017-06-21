@@ -1,4 +1,4 @@
-# libjs - General Purpose JavaScript Library
+# libjs
 
 libjs is a library of useful JavaScript functions. 
 
