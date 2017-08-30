@@ -1,0 +1,19 @@
+{
+  "name": "libjs",
+  "description": "General purpose JavaScript library",
+  "author": "Ehsan Mohammadi <ehsanx64@gmail.com> (http://ehsanm.net)",
+  "version": "0.0.1",
+  "main": "libjs.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehsanx64/libjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ehsanx64/libjs/issues"
+  },
+  "homepage": "https://github.com/ehsanx64/libjs#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
