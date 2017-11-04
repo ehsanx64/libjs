@@ -1,8 +1,8 @@
 {
-  "name": "libjs",
+  "name": "ehsanx64-libjs",
   "description": "General purpose JavaScript library",
   "author": "Ehsan Mohammadi <ehsanx64@gmail.com> (http://ehsanm.net)",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "libjs.js",
   "repository": {
     "type": "git",
