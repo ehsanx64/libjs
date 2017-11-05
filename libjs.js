@@ -30,6 +30,9 @@ var ehsanx64_libjs = (function() {
 			},
 
 
+			/**
+			 * Check if arg is a valid timestamp
+			 */
 			isTimestamp: function(arg) {
 				if (isNaN(arg)) {
 					return false;
@@ -52,6 +55,9 @@ var ehsanx64_libjs = (function() {
 	var Persian = (function() {
 		var Numeral = (function() {
 			var main = {
+				/**
+				 * Translate given number numerals to Latin
+				 */
 				toLatin: function(number) {
 					var digits = [
 						'۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹', '۰',
@@ -69,6 +75,10 @@ var ehsanx64_libjs = (function() {
 					}
 					return out;
 				},
+
+				/**
+				 * Translate given number numerals to Persian
+				 */
 				toPersian: function(number) {
 					var digits = [
 						'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-',
