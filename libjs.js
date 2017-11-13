@@ -274,8 +274,8 @@ var ehsanx64_libjs = (function() {
 				 * Returns true if dateString looks like a Jalali date, false otherwise
 				 */
 				isDateStringJalali: function(dateString) {
-					var parts = dateString.split(getDateDelimiter(dateString));
-					if (parseInt(toLatinDigits(parts[0])) < 1900 && parts.length == 3) {
+					var parts = dateString.split(libjs.Date.guessDelimiter(dateString));
+					if (parseInt(libjs.Persian.Numeral(parts[0])) < 1900 && parts.length == 3) {
 						return true;
 					}
 					return false;
