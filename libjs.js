@@ -294,6 +294,34 @@ var ehsanx64_libjs = (function() {
 	}());
 
 	/**
+	 * This class contains methods related to dates (validation, delimiter detection etc)
+	 */
+	var Date = (function() {
+		var main = {
+			/**
+			 * Takes date and tries to find out which character is being used as a delimiter
+			 */
+			guessDelimiter: function(date) {
+				var d = libjs.Persian.Numeral.toLatin(date);
+				var delimiter = '-';
+
+				if (d.split(delimiter).length != 3) {
+					delimiter = '/';
+				}
+	
+				if (d.split(delimiter).length != 3) {
+					// date doesn't seem like a date
+					return false;
+				}
+
+				return delimiter;
+			}
+		};
+
+		return main;
+	}());
+
+	/**
 	 * jQuery helper methods
 	 */
 	var jQuery = (function() {
@@ -351,6 +379,7 @@ var ehsanx64_libjs = (function() {
 
 	libjs.Persian = Persian;
 	libjs.General = General;
+	libjs.Date = Date;
 	libjs.jQuery = jQuery;
 
 	return libjs;
