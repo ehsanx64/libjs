@@ -1,10 +1,13 @@
-// import './jslib.js';
+import * as general from './general.js';
+
 class jslib {
     constructor() {
-        
+        this.general = general;
     }
-
-    sayHello() {
-        alert('Hello');
+    
+    version() {
+        return '0.0.1';
     }
 }
+
+window.jslib = jslib;
