@@ -2,7 +2,7 @@
   "name": "ehsanx64-jslib",
   "description": "General purpose JavaScript library",
   "author": "Ehsan Mohammadi <ehsanx64@gmail.com> (http://ehsanm.net)",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "main": "jslib.js",
   "repository": {
     "type": "git",
