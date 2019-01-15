@@ -1,4 +1,4 @@
-var ehsanx64_libjs = (function() {
+var jslib = (function() {
 	// Keep current version of library
 	var version = 0.1;
 
@@ -274,8 +274,8 @@ var ehsanx64_libjs = (function() {
 				 * Returns true if dateString looks like a Jalali date, false otherwise
 				 */
 				isDateStringJalali: function(dateString) {
-					var parts = dateString.split(libjs.Date.guessDelimiter(dateString));
-					if (parseInt(libjs.Persian.Numeral(parts[0])) < 1900 && parts.length == 3) {
+					var parts = dateString.split(jslib.Date.guessDelimiter(dateString));
+					if (parseInt(jslib.Persian.Numeral(parts[0])) < 1900 && parts.length == 3) {
 						return true;
 					}
 					return false;
@@ -302,7 +302,7 @@ var ehsanx64_libjs = (function() {
 			 * Takes date and tries to find out which character is being used as a delimiter
 			 */
 			guessDelimiter: function(date) {
-				var d = libjs.Persian.Numeral.toLatin(date);
+				var d = jslib.Persian.Numeral.toLatin(date);
 				var delimiter = '-';
 
 				if (d.split(delimiter).length != 3) {
@@ -367,7 +367,7 @@ var ehsanx64_libjs = (function() {
 		return main;
 	}());
 
-	var libjs = {
+	var jslib = {
 		/**
 		 * Get current version of library
 		 * @returns {number}
@@ -377,10 +377,10 @@ var ehsanx64_libjs = (function() {
 		}
 	};
 
-	libjs.Persian = Persian;
-	libjs.General = General;
-	libjs.Date = Date;
-	libjs.jQuery = jQuery;
+	jslib.Persian = Persian;
+	jslib.General = General;
+	jslib.Date = Date;
+	jslib.jQuery = jQuery;
 
-	return libjs;
+	return jslib;
 }());

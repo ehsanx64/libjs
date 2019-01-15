@@ -1,6 +1,6 @@
-# libjs
+# jslib
 
-libjs is a library of useful JavaScript functions. 
+jslib is a library of useful JavaScript functions. 
 
 ## Requirements:
 * Library *MUST* be self-contained with no dependecies.
