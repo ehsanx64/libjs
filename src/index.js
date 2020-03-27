@@ -3,6 +3,7 @@ import * as jalali from './jalali.js';
 import * as numeral from './numeral.js';
 import * as date from './date.js';
 import * as jquery from './jquery.js';
+import * as _ from 'lodash';
 
 class jslib {
     constructor() {
